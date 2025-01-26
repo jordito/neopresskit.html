@@ -3,6 +3,27 @@
     <p>{{rawText presskit.description}}</p>
 {{/if}}
 
+{{#if presskit.longdescription}}
+{{#each presskit.longdescription.text}}
+    <p>{{rawText this}}</p>
+{{/each}}
+
+{{#if presskit.longdescription.list.item}}
+<ul>
+    {{#each presskit.longdescription.list.item}}
+    <li>{{rawText this}}</li>
+    {{/each}}
+</ul>
+{{/if}}
+{{#if presskit.longdescription.numlist.item}}
+    <ol>
+    {{#each presskit.longdescription.numlist.item}}
+        <li>{{rawText this}}</li>
+    {{/each}}
+    </ol>
+{{/if}}
+{{/if}}
+
 {{#if presskit.history}}
 <h2 id="history">History</h2>
 <p>
