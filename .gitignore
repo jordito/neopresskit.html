@@ -32,3 +32,5 @@ build/
 
 # Bower stuff.
 bower_components/
+yarn.lock
+package-lock.json
