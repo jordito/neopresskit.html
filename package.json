@@ -1,30 +1,32 @@
 {
-  "name": "presskit",
-  "version": "0.13.0",
+  "name": "neopresskit",
+  "version": "0.14.2",
   "description": "Re-implementation of presskit() as a static site generator",
   "license": "MIT",
-  "repository": "pixelnest/presskit.html",
-  "author": {
-    "name": "Pixelnest Studio",
-    "url": "https://pixelnest.io/"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordito/neopresskit.html.git"
   },
+  "author": "Jordi Bertran Folch (https://jordibertran.dev/)",
   "keywords": [
     "presskit",
     "static site generator"
   ],
-  "homepage": "https://github.com/pixelnest/presskit.html#readme",
-  "bugs": "https://github.com/pixelnest/presskit.html/issues",
+  "homepage": "https://github.com/jordito/neopresskit.html#readme",
+  "bugs": {
+    "url": "https://github.com/jordito/neopresskit.html/issues"
+  },
   "main": "lib/index.js",
   "bin": {
-    "presskit": "bin/presskit"
+    "presskit": "bin/neopresskit"
   },
   "scripts": {
-    "start": "node bin/presskit build --watch --dev data",
-    "build": "node bin/presskit build data",
+    "start": "node bin/neopresskit build --watch --dev data",
+    "build": "node bin/neopresskit build data",
     "test": "standard | snazzy && jest",
     "tester": "jest --watch",
     "docs": "./documentation",
-    "docs:example": "node bin/presskit build -DLM -o docs/example data"
+    "docs:example": "node bin/neopresskit build -DLM -o docs/example data"
   },
   "dependencies": {
     "archiver": "^3.1.1",
@@ -42,7 +44,7 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "docco": "https://github.com/solarsailer/docco.git#ea3aea536562aed574d63904e2c2ab0138f4b40a",
+    "docco": "git+https://github.com/solarsailer/docco.git#ea3aea536562aed574d63904e2c2ab0138f4b40a",
     "jest": "^29.7.0",
     "mock-fs": "^4.5.0",
     "snazzy": "^8.0.0",
