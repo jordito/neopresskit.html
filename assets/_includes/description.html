@@ -21,4 +21,19 @@
     <p>{{rawText this}}</p>
 {{/each}}
 {{/if}}
+
+{{#if list}}
+<ul>
+    {{#each list.item}}
+    <li>{{rawText this}}</li>
+    {{/each}}
+</ul>
+{{/if}}
+{{#if numlist}}
+<ul>
+    {{#each numlist.item}}
+    <li>{{rawText this}}</li>
+    {{/each}}
+</ul>
+{{/if}}
 {{/each}}
