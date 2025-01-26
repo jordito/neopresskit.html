@@ -1,0 +1,14 @@
+<h2 id="longdescription">Description</h2>
+{{#if presskit.longdescription}}
+    {{#each presskit.longdescription.text}}
+    <p>{{rawText this}}</p>
+    {{/each}}
+    
+    {{#if presskit.longdescription.list.item}}
+        {{#each presskit.longdescription.list.item}}
+            <ul>
+                <li>{{rawText this}}</li>
+            </ul>
+        {{/each}}
+    {{/if}}
+{{/if}}
