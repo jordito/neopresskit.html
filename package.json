@@ -1,6 +1,6 @@
 {
   "name": "neopresskit",
-  "version": "0.14.2",
+  "version": "0.14.3",
   "description": "Re-implementation of presskit() as a static site generator",
   "license": "MIT",
   "repository": {
